@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/hamburger-menu.svg" width="20" height="20" alt="open navigation">               
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/cancel.svg" width="20" height="20" alt="Close navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's my first HTML &amp; CSS project</p>
+                <h1>Just Watching A Youtube Video</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try it for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/play-button.svg" width="20" height="20" alt="Watch a video">Watch a video
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/burning-dot.svg" width="200" height="200" class="hero-cta"  alt="burning dot">
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <ul class="feature-list">
+                <li>Class 1</li>
+                <li>Class 2</li>       
+                <li>Class 3</li>    
+                <li>Class 4</li>
+                <li>Class 5</li>
+            </ul>
+
+            <img src="images/hand-computer-typing-technology.jpg" width="300" height="300" alt="man holding pc">
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.svg" width="20" height="20" alt="person">
+
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ea cumque ullam odio quas omnis nisi itaque excepturi exercitationem adipisci fugit cum est distinctio harum, in magnam impedit, beatae nulla.</blockquote>
+                    <cite>Carlo</cite>
+                </li>  
+                <li>
+                    <img src="images/person.svg" width="20" height="20" alt="person-1">
+
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ea cumque ullam odio quas omnis nisi itaque excepturi exercitationem adipisci fugit cum est distinctio harum, in magnam impedit, beatae nulla.</blockquote>
+                    <cite>Maria</cite>
+                </li>  
+                <li>
+                    <img src="images/person.svg" width="20" height="20" alt="person-2">
+
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ea cumque ullam odio quas omnis nisi itaque excepturi exercitationem adipisci fugit cum est distinctio harum, in magnam impedit, beatae nulla.</blockquote>
+                    <cite>Alexca</cite>
+                </li>  
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"> 
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.69937746835!2d-75.65125278940762!3d6.244369472502513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1645590898937!5m2!1ses!2sco" width="320" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBta = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtaExit = document.getElementById('mobile-exit');
+
+        mobileBta.addEventListener('click', () => {
+            nav.classList.add('mobile-menu');
+        })     
+
+        mobileBtaExit.addEventListener('click', () => {
+            nav.classList.remove('mobile-menu');
+        })     
+
+
+    </script>
+
+</body>
+</html>
